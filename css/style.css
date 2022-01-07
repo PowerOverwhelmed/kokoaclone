@@ -1,3 +1,47 @@
+/*아래 폰트 패밀리는 바디의 폰트를 지정해주는건데
+순서대로 폰트를 찾고 없으면 다음것을 적용시키는 것이다.
 body{
-    background-color: tomato;
+    font-family: -apple-system, BlinkMacSystemFont,
+     'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
+     'Open Sans', 'Helvetica Neue', sans-serif;
+} 
+*/
+@import url('https://fonts.googleapis.com/css2?family=Cute+Font&family=Nanum+Myeongjo:wght@700&family=Nanum+Pen+Script&display=swap');
+
+
+body{font-family: 'Cute Font', cursive;
+    font-family: 'Nanum Myeongjo', serif;
+    font-family: 'Nanum Pen Script', cursive;}
+
+.status-bar{
+    display: flex;
+    justify-content: center;
+    /*스타투스 바를 플랙스 센터로 놓고
+    스타투스바 콜럼을 33퍼 너비를 준다음
+    각각의 스타투스바 디스플레이를 플렉스하고
+    컨텐츠를 중앙. 래프트 롸이트로 하면 
+    시계는 오른쪽에 있게 된다.*/
+    
+}
+/* .status-bar__column:first-child span 에서 
+ :first-child부분은 3개의 스타투스바 콜롬중에 첫번째를
+ 말하는 것이다.
+ span은 스타투스바 콜럼 안에 스팬을 말하는것이다.
+ 따라서 콜럼 퍼스트차일드를 빼면 3개다 적용
+ :nth-child(숫자) 써주면 더 편하다. */
+.status-bar__column{
+    width: 33%;
+}
+.status-bar__column:nth-child(1) span{
+    margin-right: 5px;
+}
+.status-bar__column:nth-child(2){ /*
+    이부분은 중간에 놓기위한것*/
+    display: flex;
+    justify-content: center;
+}
+.status-bar__column:nth-child(3){/*
+    이부분은 오른쪽에 놓기 위한것*/
+    display: flex;
+    justify-content: right;
 }
