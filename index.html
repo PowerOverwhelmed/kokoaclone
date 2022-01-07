@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Kokoa Clone</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- link:css 를 적고 엔터를 넣으면 위 문장이 완성된다 물론 경로는 지정해줘야함 !! -->
+
+</head>
+<body>
+        <!-- 크게 status-bar, Welcome-header, login-form 3파트로 나뉘어져있다. 바디는  -->
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>No Service</span>   <!-- 여기 이 파트가 와이파이아이콘 유니코드이고 -->
+            
+            <i class="fas fa-wifi"></i> 
+        </div>
+        <div class="status-bar__column">
+            <span>18:43</span>
+        </div>
+        <div class="status-bar__column">
+            <span>100%</span>
+            <i class="fas fa-battery-full"></i> <!-- 여기 파트는 배터리아이콘 유니코드 아래는 알겠지?-->
+            <i class="fas fa-bolt"></i>
+        </div>
+    </div>
+
+    <header class="Welcome-header">
+        <h1 class="Welcome-header__title">Welcome to KokoaClone</h1>
+        <p class="Welcome-header__paragraph">코코아 클론의 계정이 있으면 로그인 해 주세요.</p>
+    </header>
+
+    <form id="login-form">
+        <input type="text" placeholder="이메일 / 휴대폰 번호" />
+        <input type="password" placeholder="비밀번호" />
+        <input type="submit" value="로그인">
+        <a href="#">아이디나 비밀번호를 잊어먹으셨나요?</a>
+    </form>
+   
+
+    <script src="https://kit.fontawesome.com/c993299b9a.js" crossorigin="anonymous"></script>  <!-- 아래 파트가 아이콘 자바 파일임 반드시 바디를 닫기 전에 삽입하지 -->
+</body>
+</html>
