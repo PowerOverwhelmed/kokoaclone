@@ -33,7 +33,7 @@ body{font-family: 'Cute Font', cursive;
     width: 33%;
 }
 .status-bar__column:nth-child(1) span{
-    margin-right: 5px;
+    margin-right: 4px;
 }
 .status-bar__column:nth-child(2){ /*
     이부분은 중간에 놓기위한것*/
